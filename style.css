@@ -1,49 +1,83 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: thistle;
-}
-*{
-    box-sizing: border-box;
-    outline: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 body {
-    text-align:center;
-
+  background-color: #232323;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.p1_score, .p2_score{
-    color: white;
+.square {
+  width: 30%;
+  /* background-color: purple; */
+  padding-top: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 2rem;
+  transition: background 0.5s;
 }
 
-.won {
-    color: green;
-    border: 2px dashed white;
-    padding: 5px;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
-.box {
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    width: 100%;
-    top: 10%;
-    text-align: center;
+#title {
+  color: white;
+  background-color: rgb(1, 145, 130);
+  text-align: center;
 }
 
-.score {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    width: 10rem;
+#stripe {
+  background-color: whitesmoke;
+  height: 30px;
+  text-align: center;
+  width: 100%;
+  /* display: flex;
+  justify-content: space-around; */
 }
 
-.inputs {
-    display: flex;
-    position: absolute;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    top: 30%;
+header h1 {
+  padding: 20px 0;
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#colorGoal {
+  font-size: 4rem;
+}
+
+#msg{
+    display: inline-block;
+    width: 25%;
+    font-weight: bolder;
+}
+
+button {
+  border-style: none;
+  font-size: large;
+  text-transform: uppercase;
+  height: 100%;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: rgb(1, 145, 130);
+  transition: all 0.5s;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(1, 145, 130);
+  color: white;
+}
+
+.selected {
+  background-color: rgb(1, 145, 130);
+  color: white;
+}
+
+#reset {
 }
