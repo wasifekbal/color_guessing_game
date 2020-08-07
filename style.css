@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: thistle;
+}
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    text-align:center;
+
+}
+
+.p1_score, .p2_score{
+    color: white;
+}
+
+.won {
+    color: green;
+    border: 2px dashed white;
+    padding: 5px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    text-align: center;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 10rem;
+}
+
+.inputs {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    top: 30%;
+}
